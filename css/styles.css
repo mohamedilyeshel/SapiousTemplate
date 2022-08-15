@@ -1,0 +1,195 @@
+/*-------------- Sapious Tempalte / Med Ilyes Helal --------------*/
+
+:root {
+  --primaryColor: #07a3e9;
+  --primaryTintColor: #edf9ff;
+  --textColor: #555;
+  --headingsColor: #333;
+  --yellow: #ffd43b;
+}
+
+/* Header Part */
+/* NavBar */
+.appHeader {
+  background-color: var(--primaryTintColor);
+  padding: 1rem 3rem;
+}
+
+.appHeader .appNavbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.appHeader .appNavbar .appLogo {
+  width: 12rem;
+}
+
+.appHeader .appNavbar .appLogo img {
+  width: 100%;
+}
+
+.appHeader .appNavbar .appLinks ul {
+  list-style: none;
+  font-size: 1.6rem;
+}
+
+.appHeader .appNavbar .appLinks ul li a {
+  color: var(--textColor);
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.2s ease-in-out;
+}
+
+.appHeader .appNavbar .appLinks ul li a.btn {
+  font-size: 1.6rem;
+  padding: 1rem 2rem;
+  color: var(--primaryColor);
+  transition: color 0.3s ease-in-out;
+  border: 2px solid var(--primaryColor);
+  background-color: transparent;
+  z-index: 0;
+  position: relative;
+}
+
+.appHeader .appNavbar .appLinks ul li a.btn:hover {
+  color: white;
+  opacity: 1;
+}
+
+.appHeader .appNavbar .appLinks ul li a.btn::after {
+  content: "";
+  background-color: var(--primaryColor);
+  height: 0%;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  position: absolute;
+  transition: height 0.5s ease-in-out;
+}
+
+.appHeader .appNavbar .appLinks ul li a.btn:hover::after {
+  height: 100%;
+}
+
+.appHeader .appNavbar .appLinks ul li a:not(.btn)::after {
+  content: "";
+  background-color: var(--textColor);
+  width: 0%;
+  height: 2px;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  transition: width 0.5s ease-in-out;
+}
+
+.appHeader .appNavbar .appLinks ul li a:not(.btn):hover {
+  color: var(--primaryColor);
+}
+
+.appHeader .appNavbar .appLinks ul li a:not(.btn):hover::after {
+  width: 100%;
+  background-color: var(--primaryColor);
+}
+/* Intro */
+.appHeader .appIntro {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5rem;
+  margin-bottom: 5rem;
+}
+
+.appHeader .appIntro .appIntroInfos p {
+  font-size: 1.5rem;
+  line-height: 3rem;
+}
+
+.appHeader .appIntro .appIntroInfos .appIntroButtons {
+  margin: 3.2rem 0;
+}
+
+.appHeader .appIntro .appIntroInfos .appIntroButtons a {
+  margin-right: 2rem;
+}
+
+.appHeader .appIntro .appIntroInfos .appIntroButtons a i {
+  margin-left: 1rem;
+}
+
+.appHeader .appIntro .appIntroInfos .appMoreInfos {
+  display: flex;
+  align-items: center;
+}
+
+.appHeader .appIntro .appIntroInfos .appMoreInfos .appSessionsAmount {
+  position: relative;
+  left: -7rem;
+}
+
+.appHeader .appIntro .appIntroInfos .appMoreInfos .appUsersPics img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 3px solid var(--primaryColor);
+  position: relative;
+}
+
+.appHeader
+  .appIntro
+  .appIntroInfos
+  .appMoreInfos
+  .appUsersPics
+  img:nth-child(2) {
+  left: -2rem;
+}
+
+.appHeader
+  .appIntro
+  .appIntroInfos
+  .appMoreInfos
+  .appUsersPics
+  img:nth-child(3) {
+  left: -4rem;
+}
+
+.appHeader
+  .appIntro
+  .appIntroInfos
+  .appMoreInfos
+  .appUsersPics
+  img:nth-child(4) {
+  left: -6rem;
+}
+
+.appHeader
+  .appIntro
+  .appIntroInfos
+  .appMoreInfos
+  .appUsersPics
+  img:nth-child(5) {
+  left: -8rem;
+}
+
+.appHeader .appIntro .appIntroInfos .appMoreInfos .appSessionsAmount p {
+  font-weight: 500;
+}
+
+.appHeader .appIntro .appIntroInfos .appMoreInfos .appSessionsAmount p span {
+  font-weight: 600;
+  color: var(--primaryColor);
+}
+
+.appHeader .appIntro .appIntroPic {
+  width: 40rem;
+}
+
+.appHeader .appIntro .appIntroPic img {
+  width: 100%;
+  height: 100%;
+}
