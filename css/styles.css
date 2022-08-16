@@ -19,7 +19,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 5rem;
 }
 
 .appHeader .appNavbar .appLogo {
@@ -99,10 +98,12 @@
   width: 100%;
   overflow: hidden;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-start;
-  gap: 5rem;
-  margin-bottom: 5rem;
+}
+
+.appHeader .appIntro .appIntroInfos {
+  flex-grow: 1;
 }
 
 .appHeader .appIntro .appIntroInfos p {
@@ -133,8 +134,8 @@
 }
 
 .appHeader .appIntro .appIntroInfos .appMoreInfos .appUsersPics img {
-  width: 50px;
-  height: 50px;
+  width: 5rem;
+  height: 5rem;
   border-radius: 50%;
   border: 3px solid var(--primaryColor);
   position: relative;
@@ -186,10 +187,88 @@
 }
 
 .appHeader .appIntro .appIntroPic {
-  width: 40rem;
+  width: 49rem;
+  height: 32rem;
 }
 
 .appHeader .appIntro .appIntroPic img {
   width: 100%;
   height: 100%;
+}
+
+/* How it works Section */
+.appHow .title .heading-primary {
+  margin-bottom: 5rem;
+}
+
+.appHow .appTip {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  margin-bottom: 6.5rem;
+}
+
+.appHow .appTip:last-child {
+  margin-bottom: 0;
+}
+
+.appHow .appTip .appTipInfos .appTipNum {
+  font-size: 7rem;
+  color: #e1e1e1;
+  margin-bottom: 1rem;
+}
+
+.appHow .appTip .appTipInfos h2 {
+  margin-bottom: 2.6rem;
+}
+
+.appHow .appTip .appTipInfos p {
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+}
+
+.appHow .appTip .appTipImage {
+  width: 10rem;
+  height: 10rem;
+  position: relative;
+  margin-left: auto;
+  /* margin: 0 auto; */
+}
+
+.appHow .appTip .appTipImage::before {
+  content: "";
+  background-color: var(--primaryTintColor);
+  position: absolute;
+  top: -2rem;
+  left: -2rem;
+  right: -2rem;
+  bottom: -2rem;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.appHow .appTip .appTipImage::after {
+  content: "";
+  background-color: var(--primaryTintColor);
+  position: absolute;
+  top: -4rem;
+  left: -4rem;
+  bottom: -4rem;
+  z-index: -2;
+  right: -4rem;
+  border-radius: 50%;
+  opacity: 0.6;
+}
+
+.appHow .appTip .appTipImage img {
+  width: 100%;
+  height: 100%;
+}
+
+.appHow .appTipReverse .appTipInfos {
+  order: 2;
+}
+
+.appHow .appTipReverse .appTipImage {
+  margin: 0 auto;
 }

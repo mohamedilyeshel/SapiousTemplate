@@ -144,6 +144,10 @@ body {
   margin-right: 4.8rem !important;
 }
 
+.margin-bottom {
+  margin-bottom: 5rem;
+}
+
 .center-text {
   text-align: center;
 }
