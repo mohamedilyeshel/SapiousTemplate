@@ -272,3 +272,63 @@
 .appHow .appTipReverse .appTipImage {
   margin: 0 auto;
 }
+
+/* App Review Section */
+.appReview {
+  background-color: var(--primaryTintColor);
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.appReview .appReviewDetails {
+  padding: 5rem;
+}
+
+.appReview .appReviewDetails .title .heading-secondary {
+  margin-bottom: 6rem;
+}
+
+.appReview .appReviewDetails .appReviewComments {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 5rem;
+}
+
+.appReview .appReviewDetails .appReviewComments .comment img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+
+.appReview .appReviewDetails .appReviewComments .comment .commentContent {
+  font-size: 1.5rem;
+  line-height: 2.7rem;
+}
+
+.appReview .appReviewDetails .appReviewComments .comment .authorName {
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+  margin: 1rem 0;
+}
+
+.appReview .appReviewDetails .appReviewComments .comment .authorName::before {
+  content: "\F2EA";
+  font-family: "bootstrap-icons";
+}
+
+.appReview .appReviewGallery {
+  display: grid;
+  grid-template-columns: repeat(3, 25rem);
+  grid-template-rows: repeat(4, 18rem);
+  gap: 2rem;
+  align-self: center;
+}
+
+.appReview .appReviewGallery .appReviewGalImg img {
+  width: 100%;
+  height: 100%;
+}
