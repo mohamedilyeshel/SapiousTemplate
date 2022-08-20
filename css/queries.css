@@ -1,0 +1,197 @@
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media (max-width: 1500px) {
+  .appReview .appReviewGallery {
+    grid-template-columns: repeat(3, 15rem);
+    grid-template-rows: repeat(4, 13rem);
+  }
+}
+
+/* large devices (large laptops and desktops, 1200px and up) */
+@media (max-width: 1200px) {
+  .appReview .appReviewGallery {
+    grid-template-columns: repeat(2, 15rem);
+    grid-template-rows: repeat(6, 13rem);
+  }
+  .appHow .appTip .appTipImage:not(.appHow .appTipReverse .appTipImage) {
+    margin-right: 3.2rem;
+  }
+  .appHeader .appIntro .appIntroInfos .appMoreInfos .appUsersPics img {
+    width: 3.4rem;
+    height: 3.4rem;
+  }
+  .appHeader .appIntro .appIntroPic {
+    width: 38rem;
+  }
+}
+
+/* meduim devices (laptops/desktops, 992px and up) */
+@media (max-width: 992px) {
+  .appReview {
+    display: block;
+  }
+  .appReview .appReviewGallery {
+    grid-template-columns: repeat(auto-fit, 30rem);
+    grid-template-rows: repeat(auto-fit, 18rem);
+    justify-content: center;
+    grid-auto-rows: 18rem;
+  }
+  .ways {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .appFooter .footerSections {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
+    gap: 5rem;
+  }
+  .appHeader .appIntro .appIntroPic {
+    display: none;
+  }
+  .appHeader .appIntro .appIntroInfos .appMoreInfos {
+    justify-content: center;
+  }
+  .appHeader .appIntro .appIntroInfos {
+    text-align: center;
+  }
+  .appContactForm .item {
+    width: 20rem;
+  }
+}
+
+/* less then medium devices (landscape tablets, 768px and up) */
+@media (max-width: 768px) {
+  html {
+    font-size: 56.5%;
+  }
+  .appReview .appReviewDetails .appReviewComments {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 100%);
+    gap: 5rem;
+  }
+  .appHow .appTipReverse .appTipInfos {
+    order: 0;
+  }
+  .appHow .appTip .appTipImage {
+    margin-right: 3.2rem;
+  }
+  .appHeader .appNavbar {
+    display: grid;
+    justify-content: center;
+  }
+  .appHeader .appNavbar .appLogo {
+    margin: 0 auto;
+  }
+  .appHeader .appIntro .appIntroInfos .appIntroButtons a:first-child {
+    margin-bottom: 2rem;
+  }
+  .appContactForm .item {
+    width: 100%;
+  }
+  .appContactForm {
+    width: 100%;
+  }
+  .appContact .formImage {
+    display: none;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+  html {
+    font-size: 50.5%;
+  }
+  .appFooter .footerSections {
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+  }
+  .appFooter .footerSections .footerItems .appLogo {
+    margin: 0 auto;
+  }
+  .appHow .appTip {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .appHow .appTip .appTipImage {
+    margin: 0 auto !important;
+  }
+  .appHow .appTip .appTipInfos {
+    text-align: center;
+    margin-top: 7rem;
+    order: 2;
+  }
+  .ways {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .ways .way {
+    text-align: center;
+  }
+  .pricingCards {
+    flex-wrap: wrap;
+  }
+  .list-item {
+    display: grid;
+    align-items: center;
+    margin-top: 2rem;
+    text-align: center;
+  }
+  .appHeader .appIntro .appIntroInfos .appMoreInfos {
+    display: none;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+  html {
+    font-size: 50.5%;
+  }
+  .appFooter .footerSections {
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+  }
+  .appFooter .footerSections .footerItems .appLogo {
+    margin: 0 auto;
+  }
+  .appHow .appTip {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .appHow .appTip .appTipImage {
+    margin: 0 auto !important;
+  }
+  .appHow .appTip .appTipInfos {
+    text-align: center;
+    margin-top: 7rem;
+    order: 2;
+  }
+  .ways {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .ways .way {
+    text-align: center;
+  }
+  .pricingCards {
+    flex-wrap: wrap;
+  }
+  .list-item {
+    display: grid;
+    align-items: center;
+    margin-top: 2rem;
+    text-align: center;
+  }
+  .appHeader .appIntro .appIntroInfos .appMoreInfos {
+    display: none;
+  }
+  .appContactForm .formGroupLine {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 300px) {
+  html {
+    font-size: 38.5%;
+  }
+}
