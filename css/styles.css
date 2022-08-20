@@ -25,7 +25,7 @@
   width: 12rem;
 }
 
-.appHeader .appNavbar .appLogo img {
+.appHeader .appNavbar .appLogo object {
   width: 100%;
 }
 
@@ -260,7 +260,7 @@
   opacity: 0.6;
 }
 
-.appHow .appTip .appTipImage img {
+.appHow .appTip .appTipImage object {
   width: 100%;
   height: 100%;
 }
@@ -331,4 +331,245 @@
 .appReview .appReviewGallery .appReviewGalImg img {
   width: 100%;
   height: 100%;
+}
+
+/* Pricing Panel */
+.pricingCards {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.pricingCards .card {
+  border: 1px solid var(--primaryTintColor);
+  border-radius: 1rem;
+  padding: 5rem;
+}
+
+.pricingCards .best-value {
+  background-color: var(--primaryTintColor);
+  position: relative;
+  overflow: hidden;
+}
+
+.pricingCards .best-value::before {
+  content: "Best value";
+  position: absolute;
+  top: 27px;
+  right: -70px;
+  background-color: var(--yellow);
+  padding: 1rem 7rem;
+  transform: rotate(45deg);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.pricingCards .card h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  color: var(--primaryColor);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.pricingCards .card .price {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 6rem;
+  font-weight: 600;
+  color: var(--headingsColor);
+}
+
+.pricingCards .card .price::before {
+  content: "$";
+  font-size: 3rem;
+}
+
+.pricingCards .card p {
+  font-size: 1.4rem;
+  margin-bottom: 3rem;
+}
+
+.pricingCards .card ul {
+  list-style: none;
+  margin-bottom: 3rem;
+}
+
+.pricingCards .card ul li {
+  font-size: 1.6rem;
+  line-height: 4rem;
+}
+
+.pricingCards .card ul li.available::before {
+  content: "\F272";
+  font-family: "bootstrap-icons";
+  vertical-align: middle;
+  color: var(--primaryColor);
+  margin-right: 1rem;
+  font-size: 2.5rem;
+}
+
+.pricingCards .card ul li.notAvailable::before {
+  content: "\F62A";
+  font-family: "bootstrap-icons";
+  vertical-align: middle;
+  color: var(--primaryColor);
+  margin-right: 1rem;
+  font-size: 2.5rem;
+}
+
+.pricingCards .card .getStartedButton a {
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.appPricing p.note {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+/* Skills Section */
+
+.ways {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  margin-top: 9rem;
+}
+
+.ways .way .icon {
+  position: relative;
+  width: 6rem;
+  height: 6rem;
+  margin: 0 auto;
+}
+
+.ways .way .icon object {
+  width: 100%;
+  height: 100%;
+}
+
+.ways .way .icon::after {
+  content: "";
+  background-color: var(--primaryTintColor);
+  position: absolute;
+  top: -2rem;
+  bottom: -2rem;
+  right: -2rem;
+  left: -2rem;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+.ways .way .wayTitle {
+  margin: 6rem 0 1rem;
+  font-size: 2.5rem;
+  color: var(--headingsColor);
+}
+
+.ways .way .desc {
+  font-size: 1.5rem;
+  line-height: 2.7rem;
+}
+
+/* Form Contact Part */
+.appContact {
+  display: flex;
+  overflow: hidden;
+  background-color: var(--primaryTintColor);
+  border-radius: 1rem;
+  box-shadow: 0px 13px 20px 0px #ccc;
+}
+
+.appContactForm {
+  padding: 4rem;
+}
+
+.appContact .formImage {
+  background-color: var(--primaryTintColor);
+  width: 100%;
+  overflow: hidden;
+}
+
+.appContact .formImage img {
+  height: 100%;
+  width: 100%;
+  opacity: 0.7;
+  transition: transform 1s ease-in-out;
+}
+
+.appContact:hover .formImage img {
+  transform: scale(1.3);
+}
+
+.appContactForm .formTitle {
+  color: var(--primaryColor);
+  font-size: 4rem;
+  margin-bottom: 3rem;
+}
+
+.appContactForm p {
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.appContactForm .formGroupLine {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 3rem;
+}
+
+.appContactForm .formGroupLine:not(.appContactForm .formGroupLine:last-child) {
+  margin-bottom: 2rem;
+}
+
+.appContactForm .item {
+  width: 30rem;
+}
+
+.appContactForm label {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--headingsColor);
+}
+
+.appContactForm input,
+.appContactForm select {
+  padding: 1rem;
+  border: 0;
+  border-radius: 1rem;
+  border-bottom: 1px solid #eee;
+  color: var(--textColor);
+  font-family: "POPPINS", sans-serif;
+  width: 100%;
+}
+
+.appContactForm input:focus-visible,
+.appContactForm select:focus-visible {
+  border-bottom: 1px solid var(--primaryColor);
+  outline: 0;
+}
+
+.appContactForm .formButton {
+  width: 100%;
+  background-color: var(--primaryColor);
+  color: white;
+}
+
+.appContactForm .formButton {
+  width: 100%;
+  background-color: var(--primaryColor);
+  color: white;
+}
+
+.appContactForm .formButton:hover {
+  opacity: 0.7;
 }
